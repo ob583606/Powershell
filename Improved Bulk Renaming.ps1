@@ -1,7 +1,5 @@
 
 $FolderNumber = 0
-$ParentFolder = "No directory yet."
-$RunMessage = "Running running running..."
 
 Do {
 if ($FolderNumber -eq 0) {
@@ -21,7 +19,6 @@ Write-Host "$RunMessage"
 Write-Host $Folders
 
 Do {
-
 $Filedir = Get-ChildItem "$ParentFolder*" | Select-Object -Index "$Runs"
 $Filename = $Filedir -replace ".*2021" -replace '^.'
 if ($Filename -ne "INSERT NAME OF FOLDER THAT YOU DON'T WANT RENAMED HERE" -and $Filename -ne "OR HERE, IF YOU HAVE MULTIPLE") {
