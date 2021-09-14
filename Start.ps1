@@ -11,18 +11,18 @@ Do {
             $secondChoice = Read-Host -Prompt "Spotify, Discord, or both?"
         
             if ($secondChoice -eq "s") {
-                Start-Process -FilePath "C:\Users\ob583\AppData\Roaming\Spotify\Spotify.exe"
+                Start-Process -FilePath "C:\Users\Oliver\AppData\Roaming\Spotify\Spotify.exe"
                 exit
             }
 
             if ($secondChoice -eq "d") {
-                Start-Process -FilePath "C:\Users\ob583\AppData\Local\Discord\app-0.0.309\Discord.exe"
+                Start-Process -FilePath "C:\Users\Oliver\Desktop\Discord.lnk"
                 exit
             }
 
             if ($secondChoice -eq "b") {
-                Start-Process -FilePath "C:\Users\ob583\AppData\Roaming\Spotify\Spotify.exe"
-                Start-Process -FilePath "C:\Users\ob583\AppData\Local\Discord\app-0.0.309\Discord.exe"
+                Start-Process -FilePath "C:\Users\Oliver\AppData\Roaming\Spotify\Spotify.exe"
+                Start-Process -FilePath "C:\Users\Oliver\Desktop\Discord.lnk"
                 exit
             }
 
@@ -34,8 +34,9 @@ Do {
     }
 
     if ($firstChoice -eq "t") {
-        Start-Process -FilePath "D:\Program Files\tws\tws.exe"
-        Start-Process -FilePath "C:\Program Files\Google\Chrome\Application\chrome.exe"
+        Start-Process -FilePath "C:\Jts\tws.exe"
+        Start-Process "https://www.tradingview.com/chart/7JmowrBE/"
+        Start-Process "https://www.nasdaqtrader.com/trader.aspx?id=tradehalts"
         Start-Process -FilePath "C:\Users\ob583\AppData\Local\Discord\app-0.0.309\Discord.exe"
         exit
     }
@@ -43,6 +44,16 @@ Do {
     if ($firstChoice -eq "n") {
         exit
     }
+
+    if ($firstChoice -eq "s") {
+        Start-Process -FilePath "C:\Users\Oliver\AppData\Roaming\Spotify\Spotify.exe"
+        exit
+        }
+
+    if ($firstChoice -eq "d") {
+        Start-Process -FilePath "C:\Users\Oliver\Desktop\Discord.lnk"
+        exit
+        }
 
     if ($firstChoice -ne "g"-or $firstChoice -ne "t" -or $firstChoice -ne "n") {
         Write-Host "Sorry, you're a fucking idiot. Valid inputs are 's' for Spotify, 'd' for Discord, or 'b' for both."
