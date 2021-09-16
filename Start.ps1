@@ -37,7 +37,7 @@ Do {
         Start-Process -FilePath "C:\Jts\tws.exe"
         Start-Process "https://www.tradingview.com/chart/7JmowrBE/"
         Start-Process "https://www.nasdaqtrader.com/trader.aspx?id=tradehalts"
-        Start-Process -FilePath "C:\Users\ob583\AppData\Local\Discord\app-0.0.309\Discord.exe"
+        Start-Process -FilePath "C:\Users\Oliver\Desktop\Discord.lnk"
         exit
     }
 
