@@ -55,8 +55,8 @@ Do {
         exit
         }
 
-    if ($firstChoice -ne "g"-or $firstChoice -ne "t" -or $firstChoice -ne "n") {
-        Write-Host "Sorry, you're a fucking idiot. Valid inputs are 's' for Spotify, 'd' for Discord, or 'b' for both."
+    if ($firstChoice -ne "g"-or $firstChoice -ne "t" -or $firstChoice -ne "n" -or $firstChoice -ne "s") {
+        Write-Host "Sorry, you're a fucking idiot. Valid inputs are 'g' for gaming, 't' for trading, 's' for Spotify, 'd' for Discord, or 'n' for none."
     }
 
 } until ($exitNow -eq 1)
